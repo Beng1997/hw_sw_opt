@@ -1,0 +1,5 @@
+# perf artifacts (too big for Git)
+perf.data*
+*.data
+results/**/perf.data*
+results/**/perf*.data

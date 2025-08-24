@@ -1,0 +1,8 @@
+#!/root/hw_sw_opt/venv/cpython3.10-01e0476c9c69-compat-af96b9431081/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pyperf.__main__ import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
