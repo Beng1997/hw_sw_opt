@@ -1,0 +1,10 @@
+Performance version: 1.11.0
+Python version: 3.10.12 (64-bit)
+Report on Linux-5.15.0-1085-kvm-x86_64-with-glibc2.35
+Number of logical CPUs: 1
+Start date: 2025-08-24 10:42:09.736979
+End date: 2025-08-24 10:43:03.489291
+
+### crypto_pyaes ###
+Mean +- std dev: 595 ms +- 2 ms
+

@@ -1,0 +1,89 @@
+>>> Running plain benchmark...
+Python benchmark suite 1.11.0
+
+
+==================================================
+( 1/1) creating venv for benchmark (crypto_pyaes)
+
+(trying common venv first)
+Installing requirements into the virtual environment /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081
+# /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081/bin/python -m pip install pyaes==1.6.1 pyperf==2.6.3
+Requirement already satisfied: pyaes==1.6.1 in ./venv/cpython3.10-d34b20a3e178-compat-af96b9431081/lib/python3.10/site-packages (1.6.1)
+Requirement already satisfied: pyperf==2.6.3 in ./venv/cpython3.10-d34b20a3e178-compat-af96b9431081/lib/python3.10/site-packages (2.6.3)
+Requirement already satisfied: psutil>=5.9.0 in ./venv/cpython3.10-d34b20a3e178-compat-af96b9431081/lib/python3.10/site-packages (from pyperf==2.6.3) (7.0.0)
+Installing requirements into the virtual environment /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081
+# /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081/bin/python -m pip install psutil
+Requirement already satisfied: psutil in ./venv/cpython3.10-d34b20a3e178-compat-af96b9431081/lib/python3.10/site-packages (7.0.0)
+# /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081/bin/python -m pip freeze
+psutil==7.0.0
+pyaes==1.6.1
+pyperf==2.6.3
+# /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081/bin/python -m pip freeze
+psutil==7.0.0
+pyaes==1.6.1
+pyperf==2.6.3
+
+[1/1] crypto_pyaes...
+# /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081/bin/python -u /usr/local/lib/python3.10/dist-packages/pyperformance/data-files/benchmarks/bm_crypto_pyaes/run_benchmark.py --output /tmp/tmp8z2jtq22 --inherit-environ PYPERFORMANCE_RUNID
+.....................
+crypto_pyaes: Mean +- std dev: 595 ms +- 2 ms
+
+Performance version: 1.11.0
+Python version: 3.10.12 (64-bit)
+Report on Linux-5.15.0-1085-kvm-x86_64-with-glibc2.35
+Number of logical CPUs: 1
+Start date: 2025-08-24 10:42:09.736979
+End date: 2025-08-24 10:43:03.489291
+
+### crypto_pyaes ###
+Mean +- std dev: 595 ms +- 2 ms
+
+>>> Recording perf profile...
+Python benchmark suite 1.11.0
+
+
+==================================================
+( 1/1) creating venv for benchmark (crypto_pyaes)
+
+(trying common venv first)
+Installing requirements into the virtual environment /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081
+# /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081/bin/python -m pip install pyaes==1.6.1 pyperf==2.6.3
+Requirement already satisfied: pyaes==1.6.1 in ./venv/cpython3.10-d34b20a3e178-compat-af96b9431081/lib/python3.10/site-packages (1.6.1)
+Requirement already satisfied: pyperf==2.6.3 in ./venv/cpython3.10-d34b20a3e178-compat-af96b9431081/lib/python3.10/site-packages (2.6.3)
+Requirement already satisfied: psutil>=5.9.0 in ./venv/cpython3.10-d34b20a3e178-compat-af96b9431081/lib/python3.10/site-packages (from pyperf==2.6.3) (7.0.0)
+Installing requirements into the virtual environment /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081
+# /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081/bin/python -m pip install psutil
+Requirement already satisfied: psutil in ./venv/cpython3.10-d34b20a3e178-compat-af96b9431081/lib/python3.10/site-packages (7.0.0)
+# /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081/bin/python -m pip freeze
+psutil==7.0.0
+pyaes==1.6.1
+pyperf==2.6.3
+# /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081/bin/python -m pip freeze
+psutil==7.0.0
+pyaes==1.6.1
+pyperf==2.6.3
+
+[1/1] crypto_pyaes...
+# /root/hw_sw_opt/venv/cpython3.10-d34b20a3e178-compat-af96b9431081/bin/python -u /usr/local/lib/python3.10/dist-packages/pyperformance/data-files/benchmarks/bm_crypto_pyaes/run_benchmark.py --output /tmp/tmpz04dikz0 --inherit-environ PYPERFORMANCE_RUNID
+.....................
+crypto_pyaes: Mean +- std dev: 617 ms +- 2 ms
+
+Performance version: 1.11.0
+Python version: 3.10.12 (64-bit)
+Report on Linux-5.15.0-1085-kvm-x86_64-with-glibc2.35
+Number of logical CPUs: 1
+Start date: 2025-08-24 10:43:09.899116
+End date: 2025-08-24 10:44:05.560662
+
+### crypto_pyaes ###
+Mean +- std dev: 617 ms +- 2 ms
+
+>>> Writing textual perf report...
+>>> Building flamegraph...
+>>> Artifacts:
+-rw-r--r-- 1 root root 6.6K Aug 24 10:43 /root/hw_sw_opt/results/crypto_pyaes/baseline_20250824-104157.json
+-rw-r--r-- 1 root root  272 Aug 24 10:43 /root/hw_sw_opt/results/crypto_pyaes/baseline_20250824-104157.txt
+-rw-r--r-- 1 root root 6.2K Aug 24 10:44 /root/hw_sw_opt/results/crypto_pyaes/baseline_20250824-104157_perfed.json
+-rw-r--r-- 1 root root 2.2M Aug 24 10:44 /root/hw_sw_opt/results/crypto_pyaes/perf_report_baseline_20250824-104157.txt
+FlameGraph: /root/hw_sw_opt/results/crypto_pyaes/flamegraph_baseline_20250824-104157.svg
+Done.
