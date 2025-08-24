@@ -16,3 +16,8 @@ perf.data*
 *.data
 results/**/perf.data*
 results/**/perf*.data
+venv/
+perf.data*
+*.data
+results/**/perf.data*
+results/**/perf*.data
