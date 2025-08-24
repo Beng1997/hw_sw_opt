@@ -1,1 +1,0 @@
-Mean +- std dev: 173 ms +- 1 ms

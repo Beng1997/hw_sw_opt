@@ -27,3 +27,12 @@ perf.data*
 venv/
 __pycache__/
 *.pyc
+# perf intermediates
+perf.data
+*.perf
+*.folded
+# venvs
+venv/
+*/venv/
+# misc editor/system files
+.DS_Store
