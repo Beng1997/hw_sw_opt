@@ -3,3 +3,16 @@ perf.data*
 *.data
 results/**/perf.data*
 results/**/perf*.data
+# Python venv
+venv/
+
+# perf artifacts (huge)
+perf.data*
+*.data
+results/**/perf.data*
+results/**/perf*.data
+venv/
+perf.data*
+*.data
+results/**/perf.data*
+results/**/perf*.data
