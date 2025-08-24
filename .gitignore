@@ -21,3 +21,9 @@ perf.data*
 *.data
 results/**/perf.data*
 results/**/perf*.data
+# perf & build artifacts
+perf.data*
+*.old
+venv/
+__pycache__/
+*.pyc
