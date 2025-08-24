@@ -1,4 +1,0 @@
->>> Running plain benchmark...
-Python benchmark suite 1.11.0
-
-ERROR: the output file /root/hw_sw_opt/results/crypto_pyaes/baseline.json already exists!
