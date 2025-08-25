@@ -1,0 +1,3 @@
+crypto_pyaes: 598.0 ms ± 15.7 ms
+fast_crypto : 98.2 ms ± 1.8 ms
+speedup     : 6.09×  (Δ 499.7 ms)
