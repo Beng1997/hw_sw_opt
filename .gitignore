@@ -1,38 +1,10 @@
-# perf artifacts (too big for Git)
-perf.data*
-*.data
-results/**/perf.data*
-results/**/perf*.data
-# Python venv
-venv/
-
-# perf artifacts (huge)
-perf.data*
-*.data
-results/**/perf.data*
-results/**/perf*.data
-venv/
-perf.data*
-*.data
-results/**/perf.data*
-results/**/perf*.data
-venv/
-perf.data*
-*.data
-results/**/perf.data*
-results/**/perf*.data
-# perf & build artifacts
-perf.data*
-*.old
-venv/
 __pycache__/
-*.pyc
-# perf intermediates
-perf.data
-*.perf
-*.folded
-# venvs
 venv/
-*/venv/
-# misc editor/system files
-.DS_Store
+benchmarks/venv/
+backups/
+*.pyc
+*.swp
+*~
+perf.data*
+reports/*.perf
+reports/*.folded

@@ -1,0 +1,6 @@
+[benchmarks]
+name    metafile
+fast_crypto    benchmarks/bm_fast_crypto
+
+[includes]
+<default>
