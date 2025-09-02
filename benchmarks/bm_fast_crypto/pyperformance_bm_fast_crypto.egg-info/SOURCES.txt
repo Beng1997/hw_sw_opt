@@ -1,7 +1,0 @@
-pyproject.toml
-run_benchmark.py
-pyperformance_bm_fast_crypto.egg-info/PKG-INFO
-pyperformance_bm_fast_crypto.egg-info/SOURCES.txt
-pyperformance_bm_fast_crypto.egg-info/dependency_links.txt
-pyperformance_bm_fast_crypto.egg-info/requires.txt
-pyperformance_bm_fast_crypto.egg-info/top_level.txt

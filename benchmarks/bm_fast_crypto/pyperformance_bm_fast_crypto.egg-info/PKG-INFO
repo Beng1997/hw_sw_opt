@@ -1,6 +1,0 @@
-Metadata-Version: 2.4
-Name: pyperformance_bm_fast_crypto
-Version: 0.1.0
-Requires-Python: >=3.8
-Requires-Dist: pyperf
-Requires-Dist: cryptography
