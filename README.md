@@ -1,6 +1,6 @@
 # Hardware and Software Optimization
 
-This repository contains small, focused experiments comparing standard Python benchmarks (from pyperformance) with hand-written or alternative implementations, plus tooling to profile them with Linux perf and visualize results via FlameGraphs.
+This repository contains small, focused experiments comparing standard Python benchmarks (from pyperformance) with hand-written or alternative implementations, plus tooling to profile them with Lin[...] 
 
 ## Current Repository Structure
 
@@ -47,7 +47,7 @@ README.md
   4. Runs both benchmarks to JSON result files and produces a side-by-side comparison using `pyperf compare`.
 
 - `orjson_pyperf_bench.py`
-  Apples-to-apples benchmark of `orjson.dumps` using the exact payload shapes defined by the `pyperformance` JSON benchmark (EMPTY, SIMPLE, NESTED, HUGE). Allows comparing high-performance JSON serialization vs stdlib.
+  Apples-to-apples benchmark of `orjson.dumps` using the exact payload shapes defined by the `pyperformance` JSON benchmark (EMPTY, SIMPLE, NESTED, HUGE). Allows comparing high-performance JSON se[...] 
 
 - `bash_script.sh`
   Convenience script to:
@@ -154,39 +154,3 @@ cd Scripts
 ./bash_script.sh
 ```
 Creates `flamegraph_json.svg` and `flamegraph_orjson.svg` (paths/names shown in console output). If those need to live under `reports/Flamegraph/`, move or adjust the script.
-
-## Interpreting Results
-
-- Use `pyperf stats <file.json>` for individual run stats.
-- Use `pyperf compare --table fast.json pyaes.json` to display relative speed differences.
-- Inspect `perf_diff.txt` for stored comparisons.
-- FlameGraphs highlight hotspots; compare `fast.svg` vs `pyaes.svg` to see shifts in CPU time distribution.
-
-## Adding New Experiments
-
-1. Create a new script under `Scripts/` following the pyperf pattern (define a function and register with `pyperf.Runner`).
-2. Add a profiling stanza (similar to existing shell scripts) if low-level analysis is needed.
-3. Emit results to `reports/` using consistent naming (`<name>.json`, `<name>_report.txt`).
-4. Update this README if structure changes (e.g., new subdirectories or categories).
-
-## Troubleshooting
-
-| Issue | Possible Cause / Fix |
-|-------|----------------------|
-| `perf: Permission denied` | Run with `sudo` or relax `perf_event_paranoid`. |
-| `python3-dbg: command not found` | Install a debug build (e.g., `sudo apt install python3-dbg`) or edit scripts to use `python3`. |
-| Missing FlameGraph scripts | Ensure `FlameGraph/` directory exists or update paths in shell scripts. |
-| Large variance in results | Ensure minimal background load; pin CPU affinity or increase warmups/loops. |
-
-## Roadmap / Possible Enhancements
-
-- Add C or Rust extension baselines for AES / JSON (if pursued, introduce an `extensions/` directory and update this doc).
-- Automate chart generation (e.g., parse JSON outputs into plots under `reports/`).
-- Continuous benchmarking workflow (GitHub Actions + artifact upload) for regression tracking.
-
-## License
-
-(Choose and add a license, e.g., MIT, Apache-2.0, etc.)
-
----
-Last updated to reflect actual on-disk structure shown in the repository (Scripts directory contents and reports layout).
